@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BooksLibrary</string>
+    <string name="booksTitle">Books</string>
+    <string name="read_btn">Want To Read</string>
+    <string name="notification">Notification</string>
+    <string name="reviews">Reviews</string>
+    <string name="favorites">Favorites</string>
+    <string name="search_book">Search</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+    </data>
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_height="130dp"
+       android:layout_margin="10dp">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:id="@+id/card_imgView"
+               android:layout_width="90dp"
+               android:layout_height="110dp"
+               android:layout_marginStart="10dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+
+           <TextView
+               android:id="@+id/book_title"
+               android:layout_width="130sp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="20dp"
+               android:text="TextView"
+               app:layout_constraintStart_toEndOf="@+id/card_imgView"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:id="@+id/author"
+               android:layout_width="130sp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="15dp"
+               android:text="TextView"
+               app:layout_constraintStart_toEndOf="@+id/card_imgView"
+               app:layout_constraintTop_toBottomOf="@+id/book_title" />
+
+           <Button
+               android:id="@+id/button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:layout_marginEnd="5dp"
+               android:background="@color/orange"
+               android:text="@string/read_btn"
+               android:textColor="@color/white"
+               android:textFontWeight="900"
+               android:textSize="10sp"
+               app:layout_constraintEnd_toStartOf="@+id/imageView"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <ImageView
+               android:id="@+id/imageView"
+               android:layout_width="19dp"
+               android:layout_height="25dp"
+               android:layout_marginTop="12dp"
+               android:layout_marginEnd="4dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               android:src="@drawable/delete_icon" />
+
+           <RatingBar
+               android:id="@+id/rating"
+               style="?android:attr/ratingBarStyleSmall"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginEnd="30dp"
+               android:backgroundTint="@color/gray"
+               android:isIndicator="true"
+               android:numStars="5"
+               android:progressTint="@color/orange"
+               android:rating="3.5"
+               android:stepSize="0.1"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/button" />
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+</layout>
